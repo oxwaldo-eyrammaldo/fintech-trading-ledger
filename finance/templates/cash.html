@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Fund Deposit
+{% endblock %}
+
+{% block main %}
+    <form action="/cash" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="amount" placeholder="Deposit Amount ($)" type="text" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Add Cash Funds</button>
+    </form>
+{% endblock %}
